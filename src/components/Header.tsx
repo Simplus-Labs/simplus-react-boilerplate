@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import simplusToolboxLogo from '@/assets/Simplus Toolbox.svg';
 import { GithubLogo, List } from '@phosphor-icons/react';
 import { Button } from '@/components/ui/button';
+import OtherTools from './OtherTools';
 
 export default function Header(): JSX.Element {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -99,6 +100,7 @@ export default function Header(): JSX.Element {
               </li>
             </ul>
           </nav>
+          <OtherTools />
         </div>
       )}
     </div>
