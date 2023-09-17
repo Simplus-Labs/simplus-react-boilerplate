@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { CaretRight } from '@phosphor-icons/react';
-import simplusLogo from '../../public/Simplus.svg';
+import toolsData from '../../toolsData.json';
 
 export default function OtherTools(): JSX.Element {
   return (
@@ -12,26 +12,18 @@ export default function OtherTools(): JSX.Element {
         </Button>
       </div>
       <ul className="flex flex-col gap-4">
-        <li>
-          <a
-            href="https://github.com/Simplus-Labs"
-            target="_blank"
-            rel="noreferrer"
-            className="flex gap-3 items-center underline transition-colors hover:text-primary text-foreground"
-          >
-            <img src={simplusLogo} alt="Simplus logo" className="h-6" /> Simplus Labs
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://github.com/Simplus-Labs"
-            target="_blank"
-            rel="noreferrer"
-            className="flex gap-3 items-center underline transition-colors hover:text-primary text-foreground"
-          >
-            <img src={simplusLogo} alt="Simplus logo" className="h-6" /> Simplus Labs
-          </a>
-        </li>
+        {toolsData.map((tool) => (
+          <li key={tool.name}>
+            <a
+              href={tool.url}
+              target="_blank"
+              rel="noreferrer"
+              className="flex gap-3 items-center underline transition-colors hover:text-primary text-foreground"
+            >
+              <img src={tool.logo} alt={`${tool.name} logo`} className="h-6" /> {tool.name}
+            </a>
+          </li>
+        ))}
       </ul>
     </div>
   );
