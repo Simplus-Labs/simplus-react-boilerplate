@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
-import simplusToolboxLogo from '@/assets/Simplus Toolbox.svg';
 import { GithubLogo, List } from '@phosphor-icons/react';
 import { Button } from '@/components/ui/button';
 import OtherTools from './OtherTools';
+import Logo from '@/components/Logo';
 
 export default function Header(): JSX.Element {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,7 +20,7 @@ export default function Header(): JSX.Element {
       <div className="flex flex-col items-center justify-between px-4 py-3 lg:px-40 lg:flex-row bg-background/80 backdrop-blur-sm">
         <div className="flex items-center justify-between w-full lg:w-auto">
           <a href="/">
-            <img src={simplusToolboxLogo} className="h-14" alt="Simplus Toolbox logo" />
+            <Logo className="h-14" color="orange-gradient" />
           </a>
           <div className="md:hidden">
             <Button
