@@ -20,7 +20,7 @@ export default function Header(): JSX.Element {
       <div className="flex flex-col items-center justify-between px-4 py-3 lg:px-40 lg:flex-row bg-background/80 backdrop-blur-sm">
         <div className="flex items-center justify-between w-full lg:w-auto">
           <a href="/">
-            <Logo className="h-14" color="orange-gradient" />
+            <Logo className="h-14" />
           </a>
           <div className="md:hidden">
             <Button
