@@ -1,5 +1,6 @@
 import Header from '@/components/Header';
 import OtherTools from '../OtherTools';
+import Footer from '../Footer';
 
 interface MainLayoutProps {
   children: React.ReactNode;
@@ -14,6 +15,7 @@ export default function MainLayout({ children }: MainLayoutProps): JSX.Element {
           <OtherTools />
         </div>
       </div>
+      <Footer />
     </>
   );
 }
