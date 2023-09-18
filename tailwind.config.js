@@ -56,6 +56,9 @@ module.exports = {
           end: 'hsl(var(--gradient-end))',
         },
       },
+      boxShadow: {
+        glow: '0px 0px 4px 0px hsl(var(--primary))',
+      },
       borderRadius: {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',
