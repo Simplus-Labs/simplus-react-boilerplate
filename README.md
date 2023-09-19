@@ -1,27 +1,59 @@
-# React + TypeScript + Vite
+<a href="https://precedent.dev">
+  <h1 align="center">Simplus React Boilerplate</h1>
+</a>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <a href="#introduction"><strong>Introduction</strong></a> ·
+  <a href="#customize-to-your-needs"><strong>Customize to your needs</strong></a> ·
+  <a href="#tech-stack--features"><strong>Tech Stack + Features</strong></a>
+  </p>
+<br/>
 
-Currently, two official plugins are available:
+## Introduction
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This BolerPlay is ideal for creating React tools for Simplus-Labs.
 
-## Expanding the ESLint configuration
+Install the repository
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+```bash
+git clone https://github.com/Simplus-Labs/simplus-react-boilerplate
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Next, update the Git source to the corresponding repository of your application using the following command:
+
+```bash
+git remote set-url origin tool-url
+```
+
+## Customize to your needs
+
+Once you have the Boilerplate on your machine, you need to modify the meta-information of the tool and set the color theme.
+
+Go to the `index.html` file.
+
+- Change the content of the meta tag `og:title` to the name of the tool that it's building
+- Change the content of the meta tag `og:description` to the description of the tool that it's building
+- On the `<body>` tag with the theme that the tool requires.
+
+```html
+<body class="yellow-gradient">
+  <div id="root"></div>
+</body>
+```
+
+### List of themes
+
+- slate-gradient
+- stone-gradient
+- gray-gradient
+- neutral-gradient
+- red-gradient
+- rose-gradient
+- green-gradient
+- blue-gradient
+- yellow-gradient
+- violet-gradient
+
+## Tech Stack
+
+React, tailwind, shadcnUI, TypeScript
