@@ -12,6 +12,7 @@ module.exports = {
     'plugin:jsx-a11y/recommended',
     'plugin:@typescript-eslint/recommended',
     'eslint-config-prettier',
+    'plugin:import/typescript',
   ],
   overrides: [
     {
@@ -24,7 +25,15 @@ module.exports = {
       },
     },
   ],
-  ignorePatterns: ['dist', '.eslintrc.cjs', 'vite-env.d.ts', '**/*.css', 'commitlint.config.cjs'],
+  ignorePatterns: [
+    'dist',
+    '.eslintrc.cjs',
+    'vite-env.d.ts',
+    '**/*.css',
+    'commitlint.config.cjs',
+    'postcss.config.js',
+    'tailwind.config.js',
+  ],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
@@ -43,6 +52,7 @@ module.exports = {
         paths: ['src'],
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
       },
+      typescript: true,
     },
   },
   rules: {

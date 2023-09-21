@@ -1,36 +1,20 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '../public/vite.svg';
-import './App.css';
+import MainLayout from './components/layout/MainLayout';
 
 function App(): JSX.Element {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank" rel="noreferrer">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <MainLayout>
+      <div className=" flex flex-col gap-10 w-full">
+        <div className="flex flex-col gap-4">
+          <div className="text-5xl font-bold bg-gradient-to-b from-gradient-start via-gradient-middle to-gradient-end bg-clip-text text-transparent">
+            Simplus React Boilerplate
+          </div>
+          <div className="text-neutral-700">Simplus React Boilerplate by Simplus Labs</div>
+        </div>
+        <div className="border-dashed	border-2 rounded-md h-96 text-4xl	font-bold items-center flex justify-center text-neutral-400">
+          Tool Here
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button
-          onClick={() => {
-            setCount((count) => count + 1);
-          }}
-        >
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
-    </>
+    </MainLayout>
   );
 }
 
