@@ -1,22 +1,23 @@
 {
   "name": "simplus-react-boilerplate",
+  "author": "Simplus Labs",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "A React boilerplate with consistent design for Simplus Toolbox, responsive layout, quick theme switching, and code quality tools.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.6.1",
+    "pnpm": ">=8.7.5"
+  },
   "type": "module",
   "scripts": {
     "prepare": "husky install",
-    "precommit": "lint-staged",
     "dev": "vite",
     "host": "vite --host",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "format": "prettier --write .",
     "build": "tsc && vite build",
     "preview": "vite preview"
-  },
-  "lint-staged": {
-    "*.{js,css,ts,tsx,jsx}": [
-      "prettier --write",
-      "eslint --fix"
-    ]
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.0.10",
