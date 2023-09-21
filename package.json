@@ -6,8 +6,8 @@
   "description": "A React boilerplate with consistent design for Simplus Toolbox, responsive layout, quick theme switching, and code quality tools.",
   "license": "MIT",
   "engines": {
-    "node": ">=20.6.1",
-    "pnpm": ">=8.7.5"
+    "node": "18.x",
+    "pnpm": "8.x"
   },
   "type": "module",
   "scripts": {
