@@ -2,7 +2,7 @@
   "name": "simplus-react-boilerplate",
   "author": "Simplus Labs",
   "private": true,
-  "version": "1.0.0-dev",
+  "version": "1.0.0",
   "description": "A React boilerplate with consistent design for Simplus Toolbox, responsive layout, quick theme switching, and code quality tools.",
   "license": "MIT",
   "engines": {
