@@ -16,6 +16,8 @@
 - 📱 **Diseño Responsive**: Diseñado para verse y funcionar perfectamente en dispositivos de todos los tamaños.
 - 🎨 **Cambio Rápido de Tema**: Cambia rápidamente la apariencia de tu herramienta seleccionando entre una gama de temas personalizados.
 - 💻 **Estandarización y Calidad del Código**: Mantén un código limpio y consistente con herramientas líderes como ESLint, Prettier y Commitlint.
+- ⚙️ **Automatización de Semantic Versioning**: Ahora, la versión semántica (SemVer) se automatiza con Release It! para una gestión sencilla de las versiones.
+
 
 ## 🧰 Tecnologías
 
@@ -27,6 +29,7 @@
 - [![ESLint][ESLint]][ESLint-url]
 - [![Prettier][Prettier]][Prettier-url]
 - [![Vite][Vite]][Vite-url]
+- [![Release-It]][Release-It-url]
 
 ## ✨ Personalizar
 
@@ -37,19 +40,17 @@
    - 🖋 Actualiza todos los títulos y meta tags para que coincidan con el nombre, la descripción y otros detalles de tu herramienta.
 
 2. **Adaptación de Tema**: Da forma a la experiencia visual de tu herramienta.
-   - 🎨 Establece tu tema deseado modificando la etiqueta `<body>`.
+   - 🎨 Establece tu tema deseado modificando el atributo `data-theme` en la etiqueta `<html>`.
    
 ```html
-<body class="yellow-gradient">
-  <div id="root"></div>
-</body>
+<html lang="en" data-theme="green-gradient">
 ```
 
 3. **Elige entre Nuestros Temas**: Ya sea que prefieras un Zinc minimalista o un Rose vibrante, te tenemos cubierto. Selecciona de una rica paleta de temas diseñados para una experiencia de usuario impecable.
 
 ### 🎨 Lista de temas
 
-| Tema  | Clase | Previsualización |
+| Tema  | data-theme | Previsualización |
 | ------------- | ------------- | ------------- |
 | Zinc | zinc-gradient | ![zinc-gradient](zinc-gradient.svg)  |
 | Slate | slate-gradient | ![slate-gradient](slate-gradient.svg) |
@@ -84,3 +85,5 @@ Este proyecto está bajo la licencia MIT. Consulta [LICENCIA](../CODE_OF_CONDUCT
 [ESLint-url]: https://eslint.org/
 [Prettier]:https://img.shields.io/badge/Prettier-F7B93E.svg?style=for-the-badge&logo=Prettier&logoColor=black
 [Prettier-url]: https://prettier.io/
+[Release-It]:https://img.shields.io/badge/ReleaseIt-000000.svg?style=for-the-badge&logo=ReleaseIt&logoColor=white
+[Release-It-url]: https://github.com/release-it/release-it

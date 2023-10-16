@@ -16,6 +16,7 @@
 - 📱 **Responsive Layout**: Designed to look and function seamlessly on devices of all sizes.
 - 🎨 **Quick Theme Switching**: Rapidly change the look of your tool by selecting from a range of custom themes.
 - 💻 **Code Standardization and Quality**: Maintain clean and consistent code with leading tools like ESLint, Prettier, and Commitlint.
+- ⚙️ **Automated Semantic Versioning**: Semantic Versioning (SemVer) is now automated with Release It! for easy version management.
 
 ## 🧰 Tech Stack
 
@@ -27,6 +28,7 @@
 - [![ESLint][ESLint]][ESLint-url]
 - [![Prettier][Prettier]][Prettier-url]
 - [![Vite][Vite]][Vite-url]
+- [![Release-It]][Release-It-url]
 
 ## ✨ Customize
 
@@ -37,19 +39,17 @@ Ready to make this boilerplate uniquely yours? Here’s how:
    - 🖋 Update all title and meta tags to match your tool's name, description, and other details.
 
 2. **Theme Adaptation**: Shape the visual experience of your tool.
-   - 🎨 Set your desired theme by modifying the `<body>` tag.
+   - 🎨 Set your desired theme by modifying the `data-theme` attribute in the `<html>` tag.
 
 ```html
-<body class="yellow-gradient">
-  <div id="root"></div>
-</body>
+<html lang="en" data-theme="green-gradient">
 ```
 
 3. **Choose from Our Themes**: Whether you’re after a minimalist gray or a vibrant rose, we’ve got you covered. Select from a rich palette of themes tailored for a seamless user experience.
 
 ### 🎨 List of themes
 
-| Theme  | Class | Preview |
+| Theme  | data-theme | Preview |
 | ------------- | ------------- | ------------- |
 | Zinc | zinc-gradient | ![zinc-gradient](docs/zinc-gradient.svg)  |
 | Slate | slate-gradient | ![slate-gradient](docs/slate-gradient.svg) |
@@ -84,3 +84,5 @@ This project is licensed under the MIT License. See [LICENSE](CODE_OF_CONDUCT.md
 [ESLint-url]: https://eslint.org/
 [Prettier]:https://img.shields.io/badge/Prettier-F7B93E.svg?style=for-the-badge&logo=Prettier&logoColor=black
 [Prettier-url]: https://prettier.io/
+[Release-It]:https://img.shields.io/badge/ReleaseIt-000000.svg?style=for-the-badge&logo=ReleaseIt&logoColor=white
+[Release-It-url]: https://github.com/release-it/release-it
