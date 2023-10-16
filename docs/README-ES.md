@@ -37,19 +37,17 @@
    - 🖋 Actualiza todos los títulos y meta tags para que coincidan con el nombre, la descripción y otros detalles de tu herramienta.
 
 2. **Adaptación de Tema**: Da forma a la experiencia visual de tu herramienta.
-   - 🎨 Establece tu tema deseado modificando la etiqueta `<body>`.
+   - 🎨 Establece tu tema deseado modificando el atributo `data-theme` en la etiqueta `<html>`.
    
 ```html
-<body class="yellow-gradient">
-  <div id="root"></div>
-</body>
+<html lang="en" data-theme="green-gradient">
 ```
 
 3. **Elige entre Nuestros Temas**: Ya sea que prefieras un Zinc minimalista o un Rose vibrante, te tenemos cubierto. Selecciona de una rica paleta de temas diseñados para una experiencia de usuario impecable.
 
 ### 🎨 Lista de temas
 
-| Tema  | Clase | Previsualización |
+| Tema  | data-theme | Previsualización |
 | ------------- | ------------- | ------------- |
 | Zinc | zinc-gradient | ![zinc-gradient](zinc-gradient.svg)  |
 | Slate | slate-gradient | ![slate-gradient](slate-gradient.svg) |
