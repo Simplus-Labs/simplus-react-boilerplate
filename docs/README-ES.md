@@ -16,6 +16,8 @@
 - 📱 **Diseño Responsive**: Diseñado para verse y funcionar perfectamente en dispositivos de todos los tamaños.
 - 🎨 **Cambio Rápido de Tema**: Cambia rápidamente la apariencia de tu herramienta seleccionando entre una gama de temas personalizados.
 - 💻 **Estandarización y Calidad del Código**: Mantén un código limpio y consistente con herramientas líderes como ESLint, Prettier y Commitlint.
+- ⚙️ **Automatización de Semantic Versioning**: Ahora, la versión semántica (SemVer) se automatiza con Release It! para una gestión sencilla de las versiones.
+
 
 ## 🧰 Tecnologías
 
@@ -27,6 +29,7 @@
 - [![ESLint][ESLint]][ESLint-url]
 - [![Prettier][Prettier]][Prettier-url]
 - [![Vite][Vite]][Vite-url]
+- [![Release-It]][Release-It-url]
 
 ## ✨ Personalizar
 
@@ -82,3 +85,5 @@ Este proyecto está bajo la licencia MIT. Consulta [LICENCIA](../CODE_OF_CONDUCT
 [ESLint-url]: https://eslint.org/
 [Prettier]:https://img.shields.io/badge/Prettier-F7B93E.svg?style=for-the-badge&logo=Prettier&logoColor=black
 [Prettier-url]: https://prettier.io/
+[Release-It]:https://img.shields.io/badge/ReleaseIt-000000.svg?style=for-the-badge&logo=ReleaseIt&logoColor=white
+[Release-It-url]: https://github.com/release-it/release-it
