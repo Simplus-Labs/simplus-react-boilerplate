@@ -8,9 +8,9 @@ function App(): JSX.Element {
           <div className="text-5xl font-bold bg-gradient-to-b from-gradient-start via-gradient-middle to-gradient-end bg-clip-text text-transparent">
             Simplus React Boilerplate
           </div>
-          <div className="text-neutral-700">Simplus React Boilerplate by Simplus Labs</div>
+          <div className="text-neutral-700 max-w-3xl">Simplus React Boilerplate by Simplus Labs</div>
         </div>
-        <div className="border-dashed	border-2 rounded-md h-96 text-4xl	font-bold items-center flex justify-center text-neutral-400">
+        <div className="border-dashed border-2 rounded-md h-96 text-4xl font-bold items-center flex justify-center text-neutral-400 gap-12 flex-col md:flex-row">
           Tool Here
         </div>
       </div>
